@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Playpen+Sans:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="icon" href="Img/safari logo.png" type="image/x-icon">
+
+
+
+    <title>SAFARICA</title>
+
+</head>
+
+<body class="h-fit  ">
+    <nav class="p-4 flex items-center md:justify-around mx-auto relative z-10 bg-white shadow-lg rounded-lg">
+        <a href="index.html"><img src="Img/safari logo.png" alt="SAFARICA" class="w-[120px] lg:w-[120px]"></a>
+        <img src="Img/Burger menu.png" alt="Burger menu" class="pe-3 ms-auto w-9 h-8 md:hidden cursor-pointer transition-transform transform hover:scale-105" id="burgerMenu">
+
+        <!-- Desktop Navigation Items -->
+        <div class="hidden md:flex md:mx-auto" id="navItems">
+            <ul class="flex space-x-9 font-semibold text-gray-700">
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="about.html">About us</a></li>
+                <li class="relative group">
+                    <button id="dropdownButton" class="flex items-center hover:text-orange-400 transition-colors duration-200 text-[16px] focus:outline-none">
+                        Our Plans
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <ul id="dropdownMenu" class="absolute left-0 hidden mt-2 w-40 bg-white shadow-lg rounded-lg z-50 group-hover:block">
+                        <li class="hover:bg-gray-100 transition-colors duration-200"><a href="summer.html"  class="block px-4 py-2 text-gray-800">Summer Plan</a></li>
+                        <li class="hover:bg-gray-100 transition-colors duration-200"><a href="winter.html"  class="block px-4 py-2 text-gray-800">Winter Plan</a></li>
+                    </ul>
+                </li>
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="contact.html">Contact</a></li>
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Navigation Items -->
+        <div class="absolute top-16 right-0 w-full bg-white shadow-lg rounded-lg md:hidden hidden" id="mobileNavItems">
+            <ul class="flex flex-col space-y-2 p-4 font-semibold">
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="About.html">About us</a></li>
+                <li class="relative group">
+                    <button id="mobileDropdownButton" class="flex items-center hover:text-orange-400 transition-colors duration-200 text-[16px] focus:outline-none">
+                        Our Plans
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <ul id="mobileDropdownMenu" class="absolute left-0 hidden mt-2 w-40 bg-white shadow-lg rounded-lg z-50">
+                        <li class="hover:bg-gray-100 transition-colors duration-200"><a href="summer.html"  class="block px-4 py-2 text-gray-800">Summer Plan</a></li>
+                        <li class="hover:bg-gray-100 transition-colors duration-200"><a href="winter.html"  class="block px-4 py-2 text-gray-800">Winter Plan</a></li>
+                    </ul>
+                </li>
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="contact.html">Contact</a></li>
+                <li class="hover:text-orange-400 transition-colors duration-200 text-[16px]"><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="video" class="z-0">
+        <video src="Vid/Discover Tunisia (1080p_25fps_H264-128kbit_AAC).mp4"
+               class="md:h-[450px] md:w-full lg:h-[550px] lg:w-full xl:h-[850px] xl:w-full object-fill" autoplay loop></video>
+    </div>
+    
+    
+
+    
+
+    <div id="Title1"
+        class="mt-6 font-Playpen text-slate-700 text-sm font-bold mx-auto flex justify-center md:text-lg lg:text-2xl">
+        <p>— We help families visiting our home ♡ —</p>
+    </div>
+
+    <div id="cards"
+        class="container flex flex-wrap w-full justify-center space-x-3 items-center pt-12 md:space-x-12 md:flex-row md:mx-auto">
+        <!-- Card 1 -->
+        <div
+            class="w-[250px] md:w-[350px] rounded-3xl overflow-hidden shadow-lg mb-8 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <img class="w-full h-[200px] md:h-[250px] object-cover" src="Img/Sidi bousaid.jpg" alt="Sidibou">
+            <div class="px-6 py-4 flex flex-row justify-center">
+                <div class="text-center">
+                    <div class="font-bold md:text-xl text-[17px] mb-2">Places</div>
+                    <p class="text-gray-700 md:text-base text-[15px]">
+                        Discover unique treasures in the heart of Sidi Bou Said's charming boutiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+            class="w-[250px] md:w-[350px] rounded-3xl overflow-hidden shadow-lg mb-8 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <img class="w-full h-[200px] md:h-[250px] object-cover" src="Img/Boutique.png" alt="Boutique">
+            <div class="px-6 py-4 flex flex-row justify-center">
+                <div class="text-center">
+                    <div class="font-bold md:text-xl text-[17px] mb-2">Boutique</div>
+                    <p class="text-gray-700 md:text-base text-[15px]">
+                        Discover unique treasures in the heart of Sidi Bou Said's charming boutiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+            class="w-[250px] md:w-[350px] rounded-3xl overflow-hidden shadow-lg mb-8 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <img class="w-full h-[200px] md:h-[250px] object-cover" src="Img/Table.jpg" alt="Table">
+            <div class="px-6 py-4 flex flex-row justify-center">
+                <div class="text-center">
+                    <div class="font-bold md:text-xl text-[17px] mb-2">Cuisines</div>
+                    <p class="text-gray-700 md:text-base text-[15px]">
+                        Enjoy a delightful meal at a picturesque table overlooking the sea.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .logo {
+            position: relative;
+            left: -300px;
+            /* Starting off-screen */
+            animation: slideIn 2s ease-in-out forwards;
+            /* Apply animation */
+        }
+
+        @keyframes slideIn {
+            from {
+                left: -300px;
+                /* Start off-screen */
+            }
+
+            to {
+                left: 0;
+                /* End at final position */
+            }
+        }
+    </style>
+
+    <div class="container-fluid flex-row mx-auto px-16 space-x-6 items-center pt-16 md:flex lg:justify-end">
+        <div class=" w-full mb-8  flex justify-center logo lg:w-1/4">
+            <img src="Img/safari logo.png" alt="safari" class="w-[250px]">
+        </div>
+
+        <div class="font-Roboto font-semibold w-full md:hidden">
+            Safarica Travel Agency, founded in 2024, employs 400 professionals and serves over 1.2 million passengers
+            annually. Partnering with global tour operators, Safarica offers top-tier services across Tunisia.
+        </div>
+
+        <div class="font-Roboto font-semibold hidden md:block lg:w-3/4 text-left">
+            <p>Safarica Travel Agency, founded in 2024, is an emerging leader in the Tunisian tourism industry,
+                employing a team of 400 professionals. Handling over 1.2 million passengers annually, Safarica partners
+                with major global tour operators to offer top-tier travel services across Tunisia's most sought-after
+                destinations. With a presence in all 8 international airports and branches located in key tourist hubs,
+                Safarica ensures smooth logistics and exceptional customer service.
+
+                In addition to its physical ticketing agency in downtown Tunis, Safarica offers a user-friendly online
+                booking platform, Safarica Booking, making travel planning effortless for both domestic and
+                international travelers.</p>
+        </div>
+    </div>
+
+    <div
+        class="container-fluid flex flex-col items-center  justify-center py-16 mt-8 md:h-fit md:bg-gray-100 md:w-full md:flex md:flex-row md:justify-around">
+        <div class="flex flex-col mb-8 items-center  w-full md:w-1/3">
+            <img src="Img/since.png" alt="since icon" class="w-[120px] h-[120px]">
+            <h1 class="font-bold text-[25px] font-Roboto">2005</h1>
+            <h3 class="text-[18px] font-Roboto">Since that date we're serving families with love</h3>
+        </div>
+
+        <div class="flex flex-col  mb-11 items-center  w-full md:w-1/3">
+            <img src="Img/travel-agent.png" alt="travel agent icon" class="w-[120px] h-[120px]">
+            <h1 class="font-bold text-[25px] font-Roboto">80</h1>
+            <h3 class="text-[18px] font-Roboto">Agents are happy to assist overall Tunisia</h3>
+        </div>
+
+        <div class="flex flex-col  mb-11 items-center  w-full md:w-1/3">
+            <img src="Img/tourists.png" alt="tourists icon" class="w-[120px] h-[120px]">
+            <h1 class="font-bold text-[25px] font-Roboto">+300</h1>
+            <h3 class="text-[18px] font-Roboto">Happy families handled</h3>
+        </div>
+    </div>
+
+
+    <div
+        class="container-fluid flex flex-col justify-center items-center md:flex md:flex-row md:mx-16 md:space-x-10 md:pt-16 md:items-center ">
+        <div class="container-fluid md:w-1/2 space-y-1 pb-16 md:space-y-3 md:justify-end">
+            <h1 class="font-Roboto font-bold text-[29px] md:text-[45px]">Do not hesitate to
+                contact us
+            </h1>
+            <h1>14, Rue Habib Chrita Cité Jardin، Tunis 1002, Tunisia
+            </h1>
+            <h1>(+216) 71 785 855</h1>
+            <h1>Safarica@tunisia.com</h1>
+        </div>
+        <div class="container  md:w-1/2">
+
+            <form action="">
+                <div class="relative mb-6">
+                    <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Name <svg width="7"
+                            height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                                fill="#EF4444" />
+                        </svg>
+                    </label>
+                    <input type="text" id="default-search"
+                        class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none "
+                        placeholder="Name" required="">
+                </div>
+                <div class="relative mb-6">
+                    <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Email <svg width="7"
+                            height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                                fill="#EF4444" />
+                        </svg>
+                    </label>
+                    <input type="text" id="default-search"
+                        class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none "
+                        placeholder="name@SAFARICA.com" required="">
+                </div>
+                <div class="relative mb-6">
+                    <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Message <svg width="7"
+                            height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                                fill="#EF4444"></path>
+                        </svg>
+                    </label>
+                    <div class="flex">
+                        <div class="relative w-full">
+                            <textarea
+                                class="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
+                                placeholder="Write a message..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="w-fit px-5 h-12 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 rounded-full shadow-xs text-white text-base font-semibold leading-6">Send
+                    Message</button>
+            </form>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+
+    <footer class="relative bg-gray-100 mt-10 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            class="text-blueGray-500 hover:text-gray-800" target="_blank"> Romdhani Mohamed Ali
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
